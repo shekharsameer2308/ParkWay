@@ -31,6 +31,8 @@ Using a data-driven pipeline powered by **Pathway** and visualized via **Bokeh**
 
 ##  Architecture Diagram
 
+##  Architecture Diagram
+
 ```mermaid
 graph TD
   A[Raw Parking Data - CSV] --> B[Pathway Streaming Engine]
@@ -42,6 +44,7 @@ graph TD
   D2 --> E
   D3 --> E
   E --> F[Bokeh Visualization]
+
 
 1) **Data Ingestion and Preprocessing**:
    - The project begins with a dataset.csv file containing historical parking data (occupancy, capacity, traffic, special days, vehicle types, etc.).
