@@ -109,7 +109,7 @@ graph TD
 
 ---
 Additional Content that I have added. How this model helps in solving real-life problems.
-## 📈 Key Takeaways
+##  Key Takeaways
 
 - Pathway enables real-time streaming and transformation of structured data.
 - Dynamic pricing improves parking lot efficiency compared to static models.
