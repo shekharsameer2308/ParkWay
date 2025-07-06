@@ -1,13 +1,12 @@
-#ParkWay: Dynamic Pricing for Urban Parking Lots
+# ParkWay: Dynamic Pricing for Urban Parking Lots
 
+**ParkWay** is a real-time dynamic pricing engine for urban parking lots, developed as a capstone project for **Summer Analytics 2025 by IIT Guwahati**. The project addresses the challenges of static pricing—such as overutilization and underutilization—by dynamically adjusting parking prices based on real-time factors like occupancy, traffic, queue length, vehicle type, and special days.
 
- **ParkWay** is a real-time dynamic pricing engine for urban parking lots, developed as a capstone project for **Summer Analytics 2025 by IIT Guwahati**. The project addresses the challenges of static pricing—such as overutilization and underutilization—by dynamically adjusting parking prices based on real-time factors like occupancy, traffic, queue length, vehicle type, and special days.
-
-Using a data-driven pipeline powered by **Pathway** and visualized via **Bokeh** and **Panel**, SmartPark implements and compares multiple pricing models to ensure efficient space utilization and fair dynamic pricing.
+Using a data-driven pipeline powered by **Pathway** and visualized via **Bokeh** and **Panel**, ParkWay implements and compares multiple pricing models to ensure efficient space utilization and fair dynamic pricing.
 
 ---
----
-## Objectives
+
+##  Objectives
 
 - Build a dynamic pricing engine to adjust rates for multiple parking spaces in real-time.
 - Implement models from scratch using core data science libraries like NumPy and Pandas.
@@ -16,10 +15,7 @@ Using a data-driven pipeline powered by **Pathway** and visualized via **Bokeh**
 
 ---
 
-
-
-## Tech Stack
-
+##  Tech Stack
 
 | Tool / Library    | Purpose |
 |-------------------|---------|
@@ -31,7 +27,6 @@ Using a data-driven pipeline powered by **Pathway** and visualized via **Bokeh**
 | **Panel**         | Interactive dashboard layout |
 | **Google Colab**  | Development environment |
 
-
 ---
 
 ##  Architecture Diagram
@@ -41,7 +36,7 @@ graph TD
   A[Raw Parking Data - CSV] --> B[Pathway Streaming Engine]
   B --> C[Feature Extraction & Preprocessing]
   C --> D1[Model 1: Linear Pricing]
-  C --> D2[Model 2: Demand-based Pricing]
+  C --> D2[Model 2: Demand-Based Pricing]
   C --> D3[Model 3: Competitive Pricing]
   D1 --> E[Price Output]
   D2 --> E
