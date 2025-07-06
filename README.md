@@ -31,20 +31,21 @@ Using a data-driven pipeline powered by **Pathway** and visualized via **Bokeh**
 
 ##  Architecture Diagram
 
-##  Architecture Diagram
-
 ```mermaid
 graph TD
-  A[Raw Parking Data - CSV] --> B[Pathway Streaming Engine]
-  B --> C[Feature Extraction & Preprocessing]
-  C --> D1[Model 1: Linear Pricing]
-  C --> D2[Model 2: Demand-Based Pricing]
-  C --> D3[Model 3: Competitive Pricing]
-  D1 --> E[Price Output]
-  D2 --> E
-  D3 --> E
-  E --> F[Bokeh Visualization]
-
+    A[Historical Dataset - dataset.csv] --> B(Data Preprocessing - Pandas/NumPy);
+    B --> C(Simulated Data Stream - parking_data_stream.csv);
+    C --> D[Pathway Data Ingestion - pw.demo.replay_csv];
+    D --> E{Pathway Real-time Processing};
+    E -- Current Data (pw.this) --> F[Pricing Models:];
+    F --> F1(Model 1: Baseline Linear);
+    F --> F2(Model 2: Demand-Based - Learned Coefficients);
+    F --> F3(Model 3: Competitive - Simplified);
+    E -- All Parking Data --> F3;
+    F1 & F2 & F3 --> G(Combined Prices Stream);
+    G --> H[Real-time Visualization - Bokeh/Panel];
+    H --> I[Interactive Dashboard in Browser];
+---
 
 1) **Data Ingestion and Preprocessing**:
    - The project begins with a dataset.csv file containing historical parking data (occupancy, capacity, traffic, special days, vehicle types, etc.).
