@@ -1,6 +1,6 @@
 # ParkWay: Real-Time Dynamic Pricing for Urban Parking Lots
 
-## 📄 Overview
+## Overview
 
 **ParkWay** is a real-time dynamic pricing engine for urban parking lots, developed as a capstone project for **Summer Analytics 2025 by IIT Guwahati**. The project addresses the challenges of static pricing—such as overutilization and underutilization—by dynamically adjusting parking prices based on real-time factors like occupancy, traffic, queue length, vehicle type, and special days.
 
@@ -8,7 +8,7 @@ Using a data-driven pipeline powered by **Pathway** and visualized via **Bokeh**
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
 - Build a dynamic pricing engine to adjust rates for multiple parking spaces in real-time.
 - Implement models from scratch using core data science libraries like NumPy and Pandas.
@@ -17,7 +17,7 @@ Using a data-driven pipeline powered by **Pathway** and visualized via **Bokeh**
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Tool / Library    | Purpose |
 |-------------------|---------|
