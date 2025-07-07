@@ -8,7 +8,7 @@ Using a data-driven pipeline powered by **Pathway** and visualized via **Bokeh**
 ---
 
 ## Objectives
-
+The main objectives of the project are:
 - Build a dynamic pricing engine to adjust rates for multiple parking spaces in real-time.
 - Implement models from scratch using core data science libraries like NumPy and Pandas.
 - Use a real-time data streaming framework (**Pathway**) to simulate and process live data.
